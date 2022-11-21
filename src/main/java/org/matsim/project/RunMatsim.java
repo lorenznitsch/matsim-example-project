@@ -65,20 +65,20 @@ public class RunMatsim{
 		config.controler().setOverwriteFileSetting( OverwriteFileSetting.deleteDirectoryIfExists );
 
 		// possibly modify config here
-
+		config.controler().setLastIteration(10);
 		// ---
 		
 		Scenario scenario = ScenarioUtils.loadScenario(config) ;
 
 		// possibly modify scenario here
-		
+
 		// ---
 		
 		Controler controler = new Controler( scenario ) ;
 		
 		// possibly modify controler here
 
-//		controler.addOverridingModule( new OTFVisLiveModule() ) ;
+		// controler.addOverridingModule( new OTFVisLiveModule() ) ;
 
 		
 		// ---

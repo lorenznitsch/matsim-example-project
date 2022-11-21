@@ -49,6 +49,11 @@
 			<id>slimjars</id>
 			<url>https://mvn.slimjars.com</url>
 		</repository>
+		<!-- for sharing package -->
+		<repository>
+			<id>eth-ivt-sharing</id>
+			<url>https://packagecloud.io/eth-ivt/sharing/maven2</url>
+		</repository>
 	</repositories>
 
 	<dependencies>
@@ -138,6 +143,13 @@
 			<groupId>org.matsim.contrib</groupId>
 			<artifactId>application</artifactId>
 			<version>${matsim.version}</version>
+		</dependency>
+
+		<!-- sharing module -->
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>sharing</artifactId>
+			<version>1.0.1</version>
 		</dependency>
 
 		<!--Dependencies from where stated above to here are added as a service; they can be removed if you don't need them-->
